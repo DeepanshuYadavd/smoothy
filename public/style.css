@@ -1,0 +1,371 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(49, 47, 47);
+}
+
+nav {
+    /* border: 2px solid red; */
+    border-bottom: 1px solid rgb(181, 219, 219);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8rem;
+    min-height: 12dvh;
+}
+
+.logo {
+    /* border: 2px solid green; */
+    padding: 0.5rem;
+    text-decoration: none;
+    text-shadow: 0 0 3px rgb(181, 219, 219);
+    font-size: 2.5rem;
+    color: rgb(181, 219, 219);
+}
+
+.sign-log {
+    /* border: 2px solid green; */
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    font-size: 1.7rem;
+  
+}
+.sign-log h3{
+    font-size: 1.5rem;
+    background: linear-gradient(pink,rgb(252, 112, 135));
+    background-clip: text;
+    color: transparent;
+}
+.login{
+    text-decoration: none;
+    color: rgb(181, 219, 219);
+}
+.login:hover{
+    color:rgb(255, 184, 196);
+}
+.signup{
+    text-decoration: none;
+    color: rgb(9, 10, 10);
+    padding: 0.2rem 0.7rem;
+    border-radius: 0.3rem;
+    background-image: linear-gradient(pink,rgb(255, 89, 117));
+    border: 1px solid pink;
+}
+.signup:hover{
+    background: rgb(31, 30, 30);
+    color: pink;
+}
+
+.container {
+    /* border: 2px solid rgb(14, 112, 11); */
+    padding: 0.5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    min-height: 100dvh;
+}
+
+/* .container .img {
+    border: 2px solid red;
+} */
+
+.desc {
+    /* border: 2px solid rgb(102, 255, 0); */
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    flex-basis: 20rem;
+    gap: 2.7rem;
+    max-width: 40%;
+}
+
+.desc h2 {
+    /* border: 2px solid red; */
+    padding: 0.5rem;
+    font-size: 7rem;
+    color: pink;
+   
+}
+
+.desc h3 {
+    /* border: 2px solid red; */
+    padding: 0.5rem;
+    font-size: 3rem;
+    /* color: rgb(181, 219, 219); */
+    background: linear-gradient(rgb(181, 219, 219),rgb(32, 255, 255));
+    background-clip: text;
+    color: transparent;
+}
+
+.view-recipe {
+    border: 1px solid pink;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    color: black;
+    background-image: linear-gradient(pink,rgb(255, 89, 117));
+    align-self: flex-start;
+}
+
+.view-recipe:hover {
+    cursor: grabbing;
+    background: rgb(15, 13, 13);
+    color: pink;
+}
+.ball-slider{
+    /* border: 2px solid red; */
+    flex-basis: 28rem;
+    min-height: 70dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    position: relative;
+    overflow: hidden;
+}
+#ball{
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+    background-image: linear-gradient(pink,rgb(255, 89, 117));
+    position: absolute;
+    top: -55px;
+    right: 0;
+
+}
+
+.slide{
+    height: 2rem;
+    width: 13rem;
+    border-radius: 5px;
+    background-image: linear-gradient(rgb(181, 219, 219),rgb(5, 188, 188));
+}
+.s1{
+    position: absolute;
+    transform: rotateZ(-25deg);
+    top: 8rem;
+    right: 3rem;
+}
+.s2{
+    position: absolute;
+    transform: rotateZ(28deg);
+    left: 60px;
+    top: 280px;
+}
+.s3{
+    position: absolute;
+    transform: rotateZ(-20deg);
+    bottom: 35px;
+    right: 2px;
+}
+
+
+footer {
+    border-top: 1px solid rgb(181, 219, 219);
+    padding: 2rem;
+}
+
+footer div {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+
+}
+
+/* recipe page */
+.main-container {
+    /* border: 2px solid rgb(38, 0, 255); */
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    row-gap: 1.3rem;
+    column-gap: 1.4rem;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.recipe-container {
+    border: 1px solid rgb(120, 241, 231);
+    border-radius: 0.5rem;
+    background-image: linear-gradient(rgb(83, 180, 172),rgb(134, 187, 182));
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.recipe-container .img img {
+    /* border: 2px solid green; */
+    height: 12rem;
+}
+
+.recipe-container h2,
+p {
+    font-size: 1.7rem;
+    color: rgb(156, 48, 65);
+}
+
+/* login sign up */
+form{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    width: 30%;
+    margin:  5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2rem;
+    padding: 1.5rem;
+    background-image: linear-gradient(rgb(221, 161, 171),rgb(205, 152, 160));
+}
+form .email-error,.password-error{
+    font-size: 1rem;
+    color: rgb(255, 0, 0);
+}
+form h2{
+    text-align: center;
+}
+form input{
+    border: none;
+    appearance: none;
+    outline: none;
+    border: 1px solid black;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+form button{
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 1.5rem;
+    width: 50%;
+    margin: auto;
+    color: rgb(9, 10, 10);
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.3rem;
+    background-image: linear-gradient(pink,rgb(255, 89, 117));
+    cursor:grabbing;
+   
+}
+.formlogin{
+    background-image: linear-gradient(rgb(132, 222, 225),rgb(69, 171, 174));
+}
+.login-btn{
+    background-image: linear-gradient(rgb(5, 244, 252),rgb(12, 113, 116));
+}
+
+/* media querry */
+@media screen and (max-width:1024px) {
+    .container{
+        flex-direction: column;
+    }
+    .ball-slider{
+        /* border: 2px solid green; */
+        width: 44%;
+        min-height: 70dvh;
+        margin: auto;
+    }
+    .main-container{
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+    form{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px){
+    nav{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .ball-slider{
+        /* border: 2px solid green; */
+        width: 58%;
+        min-height: 70dvh;
+        margin: auto;
+    }
+    .main-container{
+        grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
+    .desc h2{
+        font-size: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 527px){
+    .sign-log{
+        font-size: 1.4rem;
+    }
+    .ball-slider{
+        /* border: 2px solid green; */
+       width: 100%;
+        min-height: 70dvh;
+        margin: auto;
+    }
+    form{
+        width: 90%;
+    }
+    .recipe-container h2,p {
+    font-size: 1.4rem;
+}
+.recipe-container p{
+    font-size: 1.1rem;
+}
+.desc{
+    /* border: 2px solid red; */
+    max-width: 90%;
+}
+.container img{
+    /* border: 2px solid blue; */
+    height: 20rem;
+    width: 18rem;
+}
+.desc h2,h3{
+    /* border: 2px solid blue; */
+    font-size: 3rem;
+    padding: 0rem;
+}
+
+}
+
+@media screen and (max-width:376px){
+    .logo{
+        font-size: 2rem;
+    }
+    .sign-log h3{
+        font-size: 1.1rem;
+    }
+    .ball-slider{
+        /* border: 2px solid green; */
+       width: 100%;
+        min-height: 70dvh;
+        margin: auto;
+    }
+    .s1{
+        right: 2px;
+        top: 108px;
+        
+    }
+    .s2{
+        left: 0;
+    }
+    
+}
+    

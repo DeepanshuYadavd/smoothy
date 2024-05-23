@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DY SMOOTHIES  | <%= title %></title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <nav>
+      <a class="logo" href="/">DY SMOOTHIES</a>
+      <div class="sign-log">
+        <% if(user){ %>
+          <h3>welcome, <%= user.email %></h3>
+        <a href="/logout" class="login">log out</a>
+        <% }else{ %>
+        <a href="/login" class="login">log in</a>
+        <a href="/signup" class="signup">sign up</a>
+        <% } %>
+      </div>
+    </nav>
+    <main>
+        <div class="main-container">
+      <div class="recipe-container">
+        <div class="img"><img src="/smoothie.png" alt=""></div>
+        <h2>BANANA BOAST</h2>
+        <p>Banana,Vanilla ice-cream,milk</p>
+      </div>
+      <div class="recipe-container">
+        <div class="img"><img src="/smoothie.png" alt=""></div>
+        <h2>TROPICAL TWIST</h2>
+        <p>Peach,Pine-Apple,Apple-Juice</p>
+      </div>
+      <div class="recipe-container">
+        <div class="img"><img src="/smoothie.png" alt=""></div>
+        <h2>PROTIEN PACKER</h2>
+        <p>Oats,PeanutButter,Milk,Blueberies</p>
+      </div>
+      <div class="recipe-container">
+        <div class="img"><img src="/smoothie.png" alt=""></div>
+        <h2>BANANA BOAST</h2>
+        <p>Banana,Vanilla ice-cream,milk</p>
+      </div>
+      <div class="recipe-container">
+        <div class="img"><img src="/smoothie.png" alt=""></div>
+        <h2>TROPICAL TWIST</h2>
+        <p>Peach,Pine-Apple,Apple-Juice</p>
+      </div>
+      <div class="recipe-container">
+         <div class="img"><img src="/smoothie.png" alt=""></div>
+        <h2>PROTIEN PACKER</h2>
+        <p>Oats,PeanutButter,Milk,Blueberies</p>
+      </div>
+         </div>
+    </main>
+    <footer>
+      <div>&copy; 2024 DY SMOOTHIES</div>
+    </footer>
+  </body>
+</html>
